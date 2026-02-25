@@ -1,0 +1,15 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Allarmi/Allarmi.yaml
+- Name: enailStatus
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: myemailUser
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "d.olmi@asem.it"
+- Name: myemailSender
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "davide.olmi@gmail.com"

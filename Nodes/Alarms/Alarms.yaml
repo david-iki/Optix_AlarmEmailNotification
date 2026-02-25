@@ -1,0 +1,106 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- File: AlarmsWithEmailNotification/AlarmsWithEmailNotification.yaml
+- Name: DigitalAlarmWithEmailNotification1
+  Id: g=172a0f4885b34223a668b5640748180e
+  Type: DigitalAlarmWithEmailNotification
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=e22855807349c946ea80a1d354e3d805
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=1511501d1307f98b9e92b934bdf9a50f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3e6dae9302e339c4409068119ff204ee
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Allarmi/All0"
+      Children:
+      - Name: Mode
+        Id: g=c100b75c811816c8fc4867a9b7ef63ee
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e2cbd3deed93bc75e74207949104d3e8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithEmailNotificationLogic
+    Id: g=327f8a74e3834d05de0690e82612ac9b
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=18b170d3612f070069ee74798041f714
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_AlarmEmailNotification/Security/Users/UserReceiver"
+    Children:
+    - Name: Kind
+      Id: g=4c7ecf4648dca6c90d9699eec32d162a
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailSender
+    Id: g=ecd49c5dfa34aba39b3db70b54c38ca2
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_AlarmEmailNotification/NetLogic/EmailSenderLogic"
+    Children:
+    - Name: Kind
+      Id: g=4eb1461f6b5e4ddb17be5db9db0f2ae5
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=e44819383f499ccffb5486c80f51a66d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme Motore"}
+  - Name: AutoConfirm
+    Id: g=18873e0d3aeeefef55812e005b25dfcb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoAcknowledge
+    Id: g=8df63d30c9ddd497d626684725359f8a
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

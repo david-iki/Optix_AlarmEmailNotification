@@ -1,0 +1,13 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: UserReceiver
+  Id: g=ab1fa9197a223657e9c96904826ba8a3
+  Type: UserType
+  Children:
+  - Name: Email
+    Id: g=35398255deccc138abca88c4504ae550
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "rossi@gmail.com"

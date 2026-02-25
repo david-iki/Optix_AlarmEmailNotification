@@ -1,0 +1,6 @@
+Name: Allarmi
+Type: FolderType
+Children:
+- Name: All0
+  Type: BaseDataVariableType
+  DataType: Boolean

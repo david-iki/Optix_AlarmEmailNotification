@@ -1,0 +1,489 @@
+Name: AlarmsWithEmailNotification
+Id: g=77b73bef32ef5a65b05c43c481d6d4eb
+Type: FolderType
+Children:
+- Name: DigitalAlarmWithEmailNotification
+  Id: g=e218ecebf7cd82b058fbcd03137dd459
+  Supertype: OffNormalAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"DigitalAlarmWithNotificationDisplayName"}
+  Description: {"NamespaceIndex":5,"TextId":"DigitalAlarmWithNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=d18ec398fa1eee436c181afbf099a524
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=053ff02f218bcd6af6320f2ccc27aea0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=2c117c92248d15631c08c6523acf8920
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: DigitalAlarmWithEmailNotificationLogic
+    Id: g=3eab901edf6bb179658af5a65b91c398
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=73eed626476adc40a9476103b51f727b
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=1c3893268d5313de4180736d43398a3f
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailSender
+    Id: g=63e251af09a954fcea6cb7b726934ba4
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=0f4fbf9a2d716c379828633e583a8478
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=82888dcd1024517066ddc8396a39725e
+- Name: ExclusiveLevelAlarmWithEmailNotificationType
+  Id: g=bced33d3eb396f8fc1c56bce4d70497e
+  Supertype: ExclusiveLevelAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"ExclusiveLevelAlarmWithEmailNotificationDisplayName"}
+  Description: {"NamespaceIndex":5,"TextId":"ExclusiveLevelAlarmWithEmailNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: InputValue
+    Id: g=ca71b7ee422c222d7d3695d93beb561d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=b603324c741a2fb640892c55e8742371
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: ExclusiveLevelAlarmWithEmailNotificationLogic
+    Id: g=f73472b1b9f3f7e39f15f930b370df80
+    Type: NetLogic
+  - Name: EmailUser
+    Id: g=d38b35f05a12bf69cfc866284de29402
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=4b13964174d2a9fd832a91ce30a4b3bd
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailSender
+    Id: g=2ec4e937dc4e1e169321899cfb4a38b7
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=e5d84fcee99f2e24ac627bf91232934d
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=421cfe40ca6a369b1695e5fe7006f7d1
+- Name: ExclusiveDeviationAlarmWithEmailNotificationType
+  Id: g=638bb91b52dbb16301a948f09112b286
+  Supertype: ExclusiveDeviationAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"ExclusiveDeviationAlarmWithEmailNotificationDisplayName"}
+  Description: {"NamespaceIndex":5,"TextId":"ExclusiveDeviationAlarmWithEmailNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: Setpoint
+    Id: g=6b2c0a25d68d844c0ed2d5c4a7447ffe
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=47bd464e4695bd7eaa2e4d08bc093259
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=abd3e43e2b605ef2996c4714ed8936ec
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: EmailSender
+    Id: g=36a3fa29631bde1d3ec6bdf17452811e
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=28114109e9d72c5c0db6a3f6f7e1a5b3
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailUser
+    Id: g=98a5b8279643c79408bbaca45f405b6d
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=a24c3b3163ccd2e0a54a1679eb86bea5
+      Type: PropertyType
+      DataType: NodeId
+  - Name: ExclusiveDeviationAlarmWithEmailNotificationLogic
+    Id: g=616672cb33a9a8e15f418110a769e171
+    Type: NetLogic
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=48947bc0c3b6f1dd7f768301dae3229c
+- Name: ExclusiveRateOfChangeAlarmWithEmailNotificationType
+  Id: g=b6e6234496af1c7ea383e82b8a02c39f
+  Supertype: ExclusiveRateOfChangeAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"ExclusiveRateOfChangeAlarmWithEmailNotificationDisplayName"}
+  Description: {"NamespaceIndex":5,"TextId":"ExclusiveRateOfChangeAlarmWithEmailNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: PollingTime
+    Id: g=007ca914b6664024605da093bbcafe99
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: InputValue
+    Id: g=d69b7a4c82856427dad136dd915c098b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=8124120f5252522279b74ed3c8478fc7
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: ExclusiveRateOfChangeAlarmWithEmailNotificationLogic
+    Id: g=7a0e38469f84bba8d9514a339ea8c94f
+    Type: NetLogic
+  - Name: EmailSender
+    Id: g=0cd63d2e696e581cc189cb9e29f2cca7
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=a1a2d2188ac59215b49e5d152bcbe93a
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailUser
+    Id: g=4cbcc5ad4490fd2911f1355b3b3de6f7
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=8cf1c44b48ede2a657978abc413c1325
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=184c4859a516d3e91d8ee857a1cc9200
+- Name: NonExclusiveLevelAlarmWithEmailNotificationType
+  Id: g=219bf93076a8cbc3b7ea335b3b2041b0
+  Supertype: NonExclusiveLevelAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"Non exclusive level alarm with email notification"}
+  Description: {"NamespaceIndex":5,"TextId":"NonExclusiveLevelAlarmWithEmailNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: InputValue
+    Id: g=87fbe0f8236fc25872560dcf8e3c0e43
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=668d7eb10d897c76f2f64e4f6f2ce827
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: NonExclusiveLevelAlarmWithEmailNotificationLogic
+    Id: g=c36d615bf5b0413b8609da797c3fac20
+    Type: NetLogic
+  - Name: EmailSender
+    Id: g=d42a60a7721f4461a8e603a271b3801a
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=f4eb8d655bd0a076c18a162b2bbaca9d
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailUser
+    Id: g=1f1034d898be32070c3c992e054f3153
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=4e017e4671687454b6c8b6d04f497c61
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=110b509dc377e6fa8afe1a73c063ebb1
+- Name: NonExclusiveDeviationAlarmWithEmailNotificationType
+  Id: g=64de67baa6c7953fe582a9dda137d211
+  Supertype: NonExclusiveDeviationAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"NonExclusiveDeviationAlarmWithEmailNotificationDisplayName"}
+  Description: {"NamespaceIndex":5,"TextId":"NonExclusiveDeviationAlarmWithEmailNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: Setpoint
+    Id: g=cc8333bae5841f6746811733299b888e
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ea051c8f510a0ccfa2967e4c5288d819
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=9c1e202a6a62563c4299aa6e776998e9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: NonExclusiveDeviationAlarmWithEmailNotificationLogic
+    Id: g=322199f5bdc0f95c24913dc0c66acb68
+    Type: NetLogic
+  - Name: EmailSender
+    Id: g=ec7bc809fe1596f9060f6ca8135c4a1d
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=354133b84a8edc92fe61b96b95f6d3cd
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailUser
+    Id: g=36fff426643efecf72eb07dc7fa15c9b
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=f9ccdb83968023328d2620cf298088cd
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=837355297d27c537697a26e5d2994df1
+- Name: NonExclusiveRateOfChangeAlarmWithEmailNotificationType
+  Id: g=4c795607d14cee49e122cc7998cb7daf
+  Supertype: NonExclusiveRateOfChangeAlarmController
+  DisplayName: {"NamespaceIndex":5,"TextId":"NonExclusiveRateOfChangeAlarmWithEmailNotificationDisplayName"}
+  Description: {"NamespaceIndex":5,"TextId":"NonExclusiveRateOfChangeAlarmWithEmailNotificationDescription"}
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: PollingTime
+    Id: g=f9cdd9f1c0b9a454251b196edfa010c8
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: InputValue
+    Id: g=27ddda4701d4e3fba92105c55de98f8c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=0e2f7bee4075e2c850b01d18ac090e67
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: NonExclusiveRateOfChangeAlarmWithEmailNotificationLogic
+    Id: g=ecef31ad54245000f00eb1ba4fd9b060
+    Type: NetLogic
+  - Name: EmailSender
+    Id: g=0164294d2318e77fc539622c2bb4b196
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=b3adc1271298c6799d185a6d0cfcce38
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EmailUser
+    Id: g=a3f0e07c1b12c3665c49bae3dafa4279
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=7a5e21e8d33c6fa166b074dd929b5ac4
+      Type: PropertyType
+      DataType: NodeId
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=51ee93b9bde353523c017c50cab54ed4
+- Name: ns=7;LibraryReference
+  Id: g=2af5b948e4a0015c2a16b99036ff3f14
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 7
+    },
+    "Body": {
+     "libraryGuid": "7402740dce8643d69ca9ee0cf46be879",
+     "objectGuid": "8a5cf95b8f88dd0e132d16bddf03d4cd",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }
