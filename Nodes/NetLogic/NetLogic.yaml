@@ -19,11 +19,10 @@ Children:
   - Name: SenderEmailAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "davide.olmi@gmail.com"
+    Value: "mittente@gmail.com"
   - Name: SenderEmailPassword
     Type: BaseDataVariableType
     DataType: Password
-    Value: "[202522D@B&I$707513*)"
   - Name: SMTPHostname
     Type: BaseDataVariableType
     DataType: String
